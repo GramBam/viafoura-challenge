@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  align-items: center;
+  margin-left: var(--left-spacing);
+}
+
+.header__name {
+  font-weight: bold;
+}
+
+.header__info {
+  background: #333333;
+  color: #FFF;
+  border-radius: 10px;
+  width: 70px;
+  font-size: 12px;
+  padding: 2px;
+  margin: 0 5px 0 10px;
+}
+
+.header__time {
+  color: var(--grey);
+}

@@ -1,3 +1,8 @@
+:root {
+  --left-spacing: 70px;
+  --grey: #c3c3c3;
+}
+
 body {
   margin: 0;
   padding:0;

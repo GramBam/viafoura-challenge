@@ -1,0 +1,9 @@
+.vote-display {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.vote-display__count {
+  margin-left: 3px;
+}
