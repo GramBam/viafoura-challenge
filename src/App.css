@@ -1,15 +1,83 @@
-* {
-  text-align: center;
-}
-
-.avatar {
-  border-radius: 50%;
+:root {
+  --left-spacing: 70px;
+  --grey: #a5a3a3;
 }
 
 .comment-box {
   width: 620px;
-  height: 160px;
   padding: 15px;
   border-top: 2px solid #d3d3d3;
   border-bottom: 2px solid #d3d3d3;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+.comment-box:hover .footer {
+  color: #333;
+}
+
+.avatar {
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-left: var(--left-spacing);
+}
+
+.header__name {
+  font-weight: bold;
+}
+
+.header__info {
+  background: #333333;
+  color: #FFF;
+  border-radius: 10px;
+  width: 70px;
+  font-size: 12px;
+  padding: 2px;
+  margin: 0 5px 0 10px;
+}
+
+.header__time {
+  color: var(--grey);
+}
+
+.comment-box__content {
+  line-height: 28px;
+  align-self: right;
+  text-align: initial;
+  margin-left: var(--left-spacing);
+}
+
+.footer {
+  display: flex;
+  font-size: 12px;
+  color: var(--grey);
+  margin-left: var(--left-spacing);
+}
+
+.Chevron{
+  position:relative;
+  display:block;
+  height:50px;/*height should be double border*/
+}
+.Chevron:before,
+.Chevron:after{
+  position:absolute;
+  display:block;
+  content:"";
+  border:25px solid transparent;/*adjust size*/
+}
+/* Replace all text `top` below with left/right/bottom to rotate the chevron */
+.Chevron:before{
+  top:0;
+  border-top-color:#b00;/*Chevron Color*/
+}
+.Chevron:after{
+  top:-10px;/*adjust thickness*/
+  border-top-color:#fff;/*Match background colour*/
 }
